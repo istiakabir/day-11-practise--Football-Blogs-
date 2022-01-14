@@ -4,43 +4,55 @@ body{
     margin: 0;
 }
 
+
 /***********************************
 ------* nav bar ****************/
 
-
-/* header{
-    
-    
+header{
     background-color: #2D25A0;
+    top: 0;
 }
-nav{
-    display: inline;
-}
-.nav-text{
-    position: sticky;
-    display: grid;
-    width: 587px;
-    grid-template-columns: repeat(5, 1fr);
-    padding-top: 50px;
-    justify-content: center;
-    column-gap: 36px;
-    
-    
 
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-nav ul li{
-    list-style: none;
-    color: black;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
+
+
+.nav-text{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 44px;
+    padding-top: 50px;
+    padding-left: 165px;
     
+}
+
+
+nav>ul>li>a{
+    
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    padding-right: 36px;
+    
+    
+}
+
+nav>ul>li{
+    list-style: none;
 }
 
 .login-button{
-    display: none;
+    width: 123px;
+    height: 44px;
+    padding-top: 42px;
+    padding-right: 124px;
 }
- */
+
 
 
 
@@ -62,7 +74,6 @@ nav ul li{
 .first-text{
     width: 485px;
     height: 230px;
-    /* background-color: red; */
     padding-top: 120px;
     padding-left: 156px;
 }
@@ -91,7 +102,7 @@ nav ul li{
 
 
 /*************************************************************
---------------------------------- blogs section */
+---------- blogs section *****************/
 .section-two{
     margin-top: 50px;
 }
@@ -134,7 +145,7 @@ nav ul li{
 }
 
 /*************************************************************
-************************ last section */
+***************** last section *************/
 
 
 .highlight-div{
@@ -224,9 +235,176 @@ footer{
     grid-template-columns: repeat(4, 1fr);
     width: 170px;
     height: 32px;
+    
+}
+
+.fab{
+    color: #969BAB;
 }
 
 .footer-para>p{
     font-size: 18px;
+
+}
+
+/**************************************************************
+******************* resposive media query ***********************/
+
+@media only screen and (max-width: 687px) {
+
+
+    /***********************************
+------* nav bar ****************/
+
+    header{
+        background-color: #2D25A0;
+        top: 0;
+        width: 360px;
+        height: 695px;
+        
+    }
+
+    .nav-text{
+        display:none;
+    }
+    .login-button{
+        flex: end;
+        width: 20px;
+        height: 35x;
+        padding-left: 180px;
+        
+    }
+    /***********************************
+------* first section ****************/
+
+   
+    .first-section{
+        display: flex;
+        flex-direction: column;
+        
+        
+        
+    }
+    .first-text{
+        width: 278px;
+        height: 138px;
+        padding-top: 40px;
+        padding-left: 16px;
+        
+
+    }
+    .first-text h1{
+        font-style: bold;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 50px;
+        color: #FFFFFF;
+        
+        
+    }
+  
+    .second-button{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 168px;
+        height: 44px;
+        padding: 10px, 24px, 10px, 24px;
+        background-color:#E02C6D;
+        border: 1px solid #E02C6D;
+    }
+    
+    .second-button>a{
+        
+        
+        width: 116px;
+        font-weight: 500;
+        font-size: 14px; 
+        color: #FFFFFF;
+        text-decoration: none;
+        
+    }
+    .first-image img{
+        padding-bottom: 60px;
+        padding-left: 15px;
+        width: 329px;
+        height: 259.17px;
+    
+    }
+    /*************************************************************
+---------- blogs section *****************/
+
+    .section-two{
+        margin-top: 108px;
+    }
+
+    .blogs{
+        
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0px;
+        padding-left: 15px;
+        
+        
+    }
+    .blog{
+        width: 250px;
+        height: 470px;
+        
+         
+    }
+
+    /*************************************************************
+***************** last section *************/
+
+
+.highlight-div{
+    margin-top: 50px;
+    flex-direction: column;
+    padding-left: 15px;
+    
+}
+
+.last-text{
+    width: 300px;
+    height: 299px;
+}
+
+.last-text h3{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    height: 55px;
+    
+}
+
+
+.last-image img{
+    width: 280px;
+    height: 248px;
+    margin-top: 30px;
+    padding-left: 0px;
+    padding-right: 15px;
+}
+/* ******************************
+--------------footer *****************/
+
+footer{
+    margin-top: 70px;
+    width: 300px;
+    height: 213px;
+    padding-left: 15px;
+    
+    
+    
+}
+
+.footer-icon>img{
+    
+    width: 280px;
+    height: 110px;
+    padding-right: 50px;
+}
+
 
 }
